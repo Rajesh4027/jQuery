@@ -1,85 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>jQuery selector</title>
-    <style>
-        #div1{
-            margin: auto;
-            text-align: center;
-            border: 3px black dotted;
-            font-size: 30px;
-            background-color: cadetblue;
-            height: 300px;
-            width: 300px;
-            position: relative;
-        }
-        #div2{
-            margin: auto;
-            margin-top: 10px;
-            text-align: center;
-            border: 3px black dotted;
-            font-size: 30px;
-            background-color: red;
-            height: 300px;
-            width: 300px;
-            position: relative;
-        }
-        #div3{
-            margin: auto;
-            margin-top: 10px;
-            text-align: center;
-            border: 3px black dotted;
-            font-size: 30px;
-            background-color: rgb(162, 0, 255);
-            height: 300px;
-            width: 300px;
-            position: relative;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>jQuery selector</title>
+  <style>
+    #div1 {
+      margin: auto;
+      text-align: center;
+      border: 3px black dotted;
+      font-size: 30px;
+      background-color: cadetblue;
+      height: 300px;
+      width: 300px;
+      position: relative;
+    }
+
+    #div2 {
+      margin: auto;
+      margin-top: 10px;
+      text-align: center;
+      border: 3px black dotted;
+      font-size: 30px;
+      background-color: red;
+      height: 300px;
+      width: 300px;
+      position: relative;
+    }
+
+    #div3 {
+      margin: auto;
+      margin-top: 10px;
+      text-align: center;
+      border: 3px black dotted;
+      font-size: 30px;
+      background-color: rgb(162, 0, 255);
+      height: 300px;
+      width: 300px;
+      position: relative;
+    }
+  </style>
 </head>
+
 <body>
-    <!-- jQuery selector -->
+  <!-- jQuery selector -->
 
-    <h1>jQuery Selector</h1>
-    <p>This is paragraph 1 outside div tags</p>
-    <p>This is paragraph 2 outside div tags</p>
-    <div id="div1" class="divv">
-        <p class="para">This is paragraph 1</p>
-        <p>This is paragraph 2</p>
-    </div>
-    <div id="div2" class="divv">
-        <p class="para">This is paragraph 3</p>
-        <p>This is paragraph 4</p>
-    </div>
-    <div id="div3">
-        <ul>
-            <li>Item1</li>
-            <li>Item2</li>
-            <li>Item3</li>
-            <li>Item4</li>
-            <li>Item5</li>
-        </ul>
-    </div>
+  <h1>jQuery Selector</h1>
+  <p>This is paragraph 1 outside div tags </p>
+  <p>This is paragraph 2 outside div tags </p>
+  <div id="div1" class="divv">
+    <p class="para">This is paragraph 1</p>
+    <p>This is paragraph 2 </p>
+  </div>
+  <div id="div2" class="divv">
+    <p class="para">This is paragraph 3</p>
+    <p>This is paragraph 4</p>
+  </div>
+  <div id="div3">
+    <ul>
+      <li>Item1</li>
+      <li>Item2</li>
+      <li>Item3 </li>
+      <li>Item4</li>
+      <li>Item5</li>
+    </ul>
+  </div>
 
-    <button onclick="fun()">Click Me</button>
+  <button onclick="fun()">Click Me</button>
 </body>
 <script src="JQuery/jquery.js" type="text/javascript"></script>
 <script>
-        function fun(){
-        //$(element name).action()
-        // $("div").css('background-color','orange');
+  function fun() {
+    //$(element name).action()
+    // $("div").css('background-color','orange');
 
-        // $("#p1").css('font-style','italic');
-        // $(".para").css('font-style','italic');
-        // $("div").css('border-radius','40px')
-        
-        // $("#div1,#div3").css('background-color','green');
-        
-        // $("#div1,li").css('background-color','aqua');
+    // $("#p1").css('font-style','italic');
+    // $(".para").css('font-style','italic');
+    // $("div").css('border-radius','40px')
 
-        $("div > p").fadeToggle();
-    }
+    // $("#div1,#div3").css('background-color','green');
+
+    // $("#div1,li").css('background-color','aqua');
+
+    // $("div > p").fadeToggle();
+    // $("p:first").fadeToggle();
+    $("li:even").fadeToggle();
+
+  }
 </script>
+
 </html>

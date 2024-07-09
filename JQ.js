@@ -1,3 +1,4 @@
-function fun(){
-    $("#img1").fadeToggle(3000);
+function fun() {
+  $("#img1").fadeToggle(3000);
 }
+
