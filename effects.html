@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Effects in jQuery</title>
+</head>
+<body>
+    <h1>Effects in jQuery</h1>
+    <button id="btn1">Hide</button> 
+    <button id="btn2">Show</button> 
+    <button id="btn3">Toggle</button>
+    <button id="btn4">Fade-in</button> 
+    <button id="btn5">Fade-out</button> 
+    <button id="btn6">Fadeto</button>
+    <br> <br> 
+    <img src="images/cat.jpg" alt="cat">
+</body>
+<script src="JQuery/jquery.js" type="text/javascript"></script>
+<script>
+    $("document").ready(function(){
+        $("#btn1").click(function(){
+            $("img").hide(2000);
+        })
+        $("#btn2").click(function(){
+            $("img").show();
+        })
+        $("#btn3").click(function(){
+            $("img").toggle(2000);
+        })
+        $("#btn4").click(function(){
+            $("img").fadeIn();
+        })
+        $("#btn5").click(function(){
+            $("img").fadeOut();
+        })
+        $("#btn6").click(function(){
+            $("img").fadeToggle();
+        })
+    })
+
+</script>
+</html>
